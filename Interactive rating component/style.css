@@ -1,0 +1,147 @@
+:root {
+  --Orange: hsl(25, 97%, 53%);
+
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Overpass";
+}
+
+body {
+  background-color: var(--VeryDarkBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-container {
+  width: clamp(350px, 95%, 400px);
+  height: 420px;
+  background: radial-gradient(
+    circle at 50% 0%,
+    var(--DarkBlue),
+    hsl(215, 20%, 12%)
+  );
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.star {
+  display: inline-block;
+  background-color: var(--DarkBlue);
+  border-radius: 50%;
+  padding: 13px;
+  position: relative;
+}
+.star-svg {
+  float: left;
+}
+
+h2 {
+  color: var(--White);
+}
+
+p {
+  font-size: 15px;
+  color: var(--LightGrey);
+  line-height: 25px;
+}
+
+.div-ratings {
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-between;
+}
+
+input[type="radio"] {
+  display: none;
+}
+label {
+  display: inline-block;
+  background-color: var(--DarkBlue);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 17px;
+  color: var(--LightGrey);
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  background-color: var(--Orange);
+  padding: 15px;
+  color: white;
+  letter-spacing: 4px;
+  border-radius: 25px;
+  font-size: 13px;
+  border: 0;
+}
+
+/* THANK YOU */
+.thank_you-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.thank_you-container h2 {
+  margin-bottom: 0;
+  font-size: 28px;
+}
+.thank_you-container svg {
+  margin: 10px 0;
+}
+.selected-info {
+  width: 18ch;
+  background-color: var(--DarkBlue);
+  color: var(--Orange);
+  border-radius: 20px;
+  padding: 7px 0 3px 0;
+}
+
+/* ACTIVE STATES */
+
+button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+  cursor: pointer;
+}
+
+label:hover {
+  background-color: var(--LightGrey);
+  color: var(--White);
+  cursor: pointer;
+}
+
+input:checked + label {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+.hidden {
+  display: none;
+}
