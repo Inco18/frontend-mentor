@@ -23,7 +23,7 @@ const getChallenges = async function () {
             />
           </div>
           <div class="desc">
-            <a href="https://github.com/Inco18/frontend-mentor/${data[i].name}" class="site-link"><h4>${data[i].title}</h4></a>
+            <a href="https://inco18.github.io/frontend-mentor/${data[i].name}" class="site-link"><h4>${data[i].title}</h4></a>
             <div class="langs">
               Languages used: `;
       // GENERATE USED LANGUAGES
