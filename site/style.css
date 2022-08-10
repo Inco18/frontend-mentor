@@ -1,0 +1,215 @@
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* STYLING */
+:root {
+  --grey-0: #5a5a5a;
+  --grey-500: #272727;
+  --grey-700: #222222;
+  --grey-800: #1e1e1e;
+  --grey-900: #161616;
+
+  --text-color: #e2e2e2;
+}
+.newbie,
+.html {
+  color: #6abecd;
+}
+.junior {
+  color: #aad742;
+}
+.intermediate {
+  color: #f1b604;
+}
+.advanced {
+  color: #f48925;
+}
+.guru {
+  color: #ed2c49;
+}
+.css {
+  color: #3e54a3;
+}
+.js {
+  color: #cf6390;
+}
+.fw-700 {
+  font-weight: 700;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--grey-800);
+  color: var(--text-color);
+}
+
+header {
+  background: linear-gradient(
+    180deg,
+    var(--grey-700) 85%,
+    var(--grey-800) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  height: 7rem;
+}
+
+.avatar {
+  max-height: 3rem;
+  border-radius: 50%;
+}
+
+main {
+  width: clamp(275px, 90%, 1200px);
+  margin: 0 auto;
+}
+
+.main-head h1 {
+  font-size: clamp(1rem, 3vw, 2rem);
+  margin: 1rem 0;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.challenge {
+  background-color: var(--grey-500);
+  border-radius: 0.7rem;
+  box-shadow: 0 0 10px 0 var(--grey-900);
+}
+.design-div {
+  overflow: hidden;
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+.design {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-out;
+}
+.desc {
+  padding: 1rem 2rem 0 2rem;
+}
+.difficulty,
+.langs {
+  font-size: 0.8rem;
+  margin: 0.4rem 0;
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.links {
+  display: flex;
+  height: 1rem;
+  align-items: flex-end;
+  margin: 1rem 0;
+}
+.links * {
+  color: var(--text-color);
+  height: 1rem;
+  margin: 0 0.2rem;
+  vertical-align: super;
+}
+
+footer {
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+}
+footer * {
+  margin-left: 0.3rem;
+  max-height: 0.8rem;
+  vertical-align: super;
+}
+
+.challenge:hover {
+  cursor: pointer;
+  outline: solid var(--grey-0) 2px;
+}
+.challenge:hover .design {
+  transform: scale(1.3, 1.3);
+}

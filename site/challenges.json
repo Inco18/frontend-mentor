@@ -1,0 +1,42 @@
+[
+  {
+    "name": "qr-code",
+    "title": "QR code component",
+    "difficulty": 1,
+    "lang": ["HTML", "CSS"],
+    "finish_date": "23.07.2022",
+    "fm-link": "https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H"
+  },
+  {
+    "name": "product-preview",
+    "title": "Product preview card component",
+    "difficulty": 1,
+    "lang": ["HTML", "CSS"],
+    "finish_date": "25.07.2022",
+    "fm-link": "https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
+  },
+  {
+    "name": "interactive-rating",
+    "title": "Interactive rating component",
+    "difficulty": 1,
+    "lang": ["HTML", "CSS", "JS"],
+    "finish_date": "28.07.2022",
+    "fm-link": "https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI"
+  },
+  {
+    "name": "nft-preview",
+    "title": "NFT preview card component",
+    "difficulty": 1,
+    "lang": ["HTML", "CSS"],
+    "finish_date": "29.07.2022",
+    "fm-link": "https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U"
+  },
+  {
+    "name": "order-summary",
+    "title": "Order summary component",
+    "difficulty": 1,
+    "lang": ["HTML", "CSS"],
+    "finish_date": "05.08.2022",
+    "fm-link": "https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj"
+  }
+]
