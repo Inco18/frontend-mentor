@@ -23,7 +23,7 @@ const getChallenges = async function () {
             />
           </div>
           <div class="desc">
-            <a href="/${data[i].name}" class="site-link"><h4>${data[i].title}</h4></a>
+            <a href="./${data[i].name}" class="site-link"><h4>${data[i].title}</h4></a>
             <div class="langs">
               Languages used: `;
       // GENERATE USED LANGUAGES
