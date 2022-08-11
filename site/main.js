@@ -5,6 +5,12 @@ const gridContainer = document.getElementById("grid");
 const difficulties = ["newbie", "junior", "intermediate", "advanced", "guru"];
 
 // FUNCTIONS
+function openInNewTab(href) {
+  Object.assign(document.createElement("a"), {
+    target: "_blank",
+    href: href,
+  }).click();
+}
 
 // DISPLAY ALL CHALLENGES FROM JSON FILE
 const getChallenges = async function () {
@@ -66,13 +72,20 @@ const getChallenges = async function () {
 getChallenges();
 
 // HANDLING CLICKS ON CHALLENGES
-gridContainer.addEventListener("click", function (e) {
+gridContainer.addEventListener("mouseup", function (e) {
   // ABILITY TO CLICK GITHUB AND FM LINKS
-  if (e.target.closest("a:not(.site-link)")) {
-    return;
-  }
+  if (e.button > 1 || e.target.closest("a")) return;
   // OPEN WEBSITE
   if (e.target.closest(".challenge") && !window.getSelection().toString()) {
+    if (e.button === 1) {
+      openInNewTab(
+        e.target.closest(".challenge").querySelector(".site-link").href
+      );
+      return;
+    }
     e.target.closest(".challenge").querySelector(".site-link").click();
   }
+});
+gridContainer.addEventListener("mousedown", function (e) {
+  if (e.button === 1) e.preventDefault();
 });
