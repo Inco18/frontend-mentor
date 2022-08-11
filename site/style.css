@@ -117,6 +117,8 @@ select {
 body {
   background-color: var(--grey-800);
   color: var(--text-color);
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -162,9 +164,11 @@ main {
 .design-div {
   overflow: hidden;
   border-radius: 0.7rem 0.7rem 0 0;
+  height: 10rem;
 }
 .design {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease-out;
 }
@@ -199,6 +203,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: 2.5rem;
+  margin-top: auto;
 }
 footer * {
   margin-left: 0.3rem;
