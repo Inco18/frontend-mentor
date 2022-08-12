@@ -11,3 +11,4 @@ Landing page: https://inco18.github.io/frontend-mentor/
 |[Interactive rating component](https://inco18.github.io/frontend-mentor/interactive-rating)|[GitHub](https://github.com/Inco18/frontend-mentor/tree/main/interactive-rating)|
 |[NFT preview card component](https://inco18.github.io/frontend-mentor/nft-preview)|[GitHub](https://github.com/Inco18/frontend-mentor/tree/main/nft-preview)|
 |[Order summary component](https://inco18.github.io/frontend-mentor/order-summary)|[GitHub](https://github.com/Inco18/frontend-mentor/tree/main/order-summary)|
+|[Stats preview card component](https://inco18.github.io/frontend-mentor/stats-preview)|[GitHub](https://github.com/Inco18/frontend-mentor/tree/main/stats-preview)|
