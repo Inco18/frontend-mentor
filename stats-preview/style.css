@@ -1,0 +1,181 @@
+/* PICCALIL CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* STYLING */
+:root {
+  --mainBackground: hsl(233, 49%, 7%);
+  --cardBackground: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
+
+  --white: hsl(0, 0%, 100%);
+  --slightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
+  --moreTransparentWhite: hsla(0, 0%, 100%, 0.6);
+
+  --font-inter: "Inter", sans-serif;
+}
+.accent {
+  color: var(--accent);
+}
+.upperLetters {
+  text-transform: uppercase;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mainBackground);
+  color: var(--white);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: clamp(860px, 95%, 1100px);
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  background-color: var(--cardBackground);
+}
+.main-image,
+.main-image-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.main-image-container {
+  order: 1;
+  background-color: var(--accent);
+}
+.main-image {
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+}
+
+.text-container {
+  padding: calc(25% - 4rem);
+  padding-right: 20%;
+  /* padding: 11.5%; */
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-inter);
+}
+
+h1 {
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.desc {
+  color: var(--slightlyTransparentWhite);
+  font-size: 0.9rem;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  margin-top: auto;
+}
+.stats p {
+  color: var(--moreTransparentWhite);
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr;
+    width: clamp(250px, 90%, 350px);
+  }
+  .main-image-container,
+  .main-image {
+    order: 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .main-image {
+    content: url(images/image-header-mobile.jpg);
+  }
+  .text-container {
+    padding: 2rem;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  .stats {
+    flex-direction: column;
+    gap: 1.7rem;
+    margin-top: 2rem;
+  }
+}
