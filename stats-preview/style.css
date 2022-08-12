@@ -163,9 +163,6 @@ h1 {
     order: 0;
     border-radius: 0.5rem 0.5rem 0 0;
   }
-  .main-image {
-    content: url(images/image-header-mobile.jpg);
-  }
   .text-container {
     padding: 2rem;
     text-align: center;
