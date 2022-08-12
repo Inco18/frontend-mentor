@@ -38,5 +38,13 @@
     "lang": ["HTML", "CSS"],
     "finish_date": "05.08.2022",
     "fm-link": "https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj"
+  },
+  {
+    "name": "stats-preview",
+    "title": "Stats preview card component",
+    "difficulty": 1,
+    "lang": ["HTML", "CSS"],
+    "finish_date": "12.08.2022",
+    "fm-link": "https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62"
   }
 ]
