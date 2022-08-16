@@ -54,5 +54,13 @@
     "lang": ["HTML", "CSS"],
     "finish_date": "13.08.2022",
     "fm-link": "https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-"
+  },
+  {
+    "name": "profile-card",
+    "title": "Profile card component",
+    "difficulty": 1,
+    "lang": ["HTML", "CSS"],
+    "finish_date": "16.08.2022",
+    "fm-link": "https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ"
   }
 ]
