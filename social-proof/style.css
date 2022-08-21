@@ -1,0 +1,253 @@
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* STYLING */
+:root {
+  --veryDarkMagenta: hsl(300, 43%, 22%);
+  --softPink: hsl(333, 80%, 67%);
+
+  --darkGrayishMagenta: hsl(303, 10%, 53%);
+  --lightGrayishMagenta: hsl(300, 24%, 96%);
+}
+* {
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  background-image: url(images/bg-pattern-top-desktop.svg),
+    url(images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  display: grid;
+  margin: 7rem 0;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    grid-template-columns: 40% 60%;
+    column-gap: 2rem;
+    row-gap: 7rem;
+
+    width: clamp(700px, 90%, 1200px);
+  }
+  .comments {
+    display: flex;
+    grid-column: 1/3;
+  }
+  .comment:first-of-type {
+    margin-left: 0;
+  }
+  .comment:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.main-desc {
+  max-width: calc(1300px * 0.3);
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: var(--veryDarkMagenta);
+  line-height: 40px;
+  margin-bottom: 1.5rem;
+}
+
+.main-desc p {
+  font-size: 0.9375rem;
+  color: var(--veryDarkMagenta);
+  opacity: 0.8;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--lightGrayishMagenta);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  width: 27rem;
+}
+
+.stars {
+  display: flex;
+  margin-right: 2rem;
+}
+.stars * {
+  margin: 0.2rem;
+}
+
+.rating-desc {
+  color: var(--veryDarkMagenta);
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+
+.comment {
+  background-color: var(--veryDarkMagenta);
+  color: white;
+  margin: 0 1rem;
+  padding: 2.5rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.comment-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.comment-info img {
+  border-radius: 50%;
+  max-width: 50px;
+  margin-right: 2rem;
+}
+
+.person-info {
+  color: var(--softPink);
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--softPink);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+  .rating:first-of-type {
+    transform: translateX(-3rem);
+  }
+  .rating:last-of-type {
+    transform: translateX(3rem);
+  }
+
+  .comment:first-of-type {
+    transform: translateY(-1.5rem);
+  }
+  .comment:last-of-type {
+    transform: translateY(1.5rem);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    row-gap: 1rem;
+  }
+  .rating {
+    flex-direction: column;
+    width: 18rem;
+  }
+  .stars {
+    margin: 0;
+  }
+  .comment {
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-image: url(images/bg-pattern-top-mobile.svg),
+      url(images/bg-pattern-bottom-mobile.svg);
+  }
+  main {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 90%;
+  }
+  .main-desc {
+    text-align: center;
+  }
+  .ratings {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+  .rating {
+    width: 100%;
+    max-width: 25rem;
+  }
+  .comment {
+    width: 100%;
+    max-width: 25rem;
+    margin: 1rem 0;
+  }
+}

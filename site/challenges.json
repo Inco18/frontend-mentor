@@ -70,5 +70,13 @@
     "lang": ["HTML", "CSS", "JS"],
     "finish_date": "18.08.2022",
     "fm-link": "https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam"
+  },
+  {
+    "name": "social-proof",
+    "title": "Social proof section",
+    "difficulty": 1,
+    "lang": ["HTML", "CSS"],
+    "finish_date": "21.08.2022",
+    "fm-link": "https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA"
   }
 ]
