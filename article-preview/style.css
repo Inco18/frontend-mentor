@@ -1,0 +1,248 @@
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* STYLING */
+:root {
+  --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --desaturatedDarkBlue: hsl(214, 17%, 51%);
+  --grayishBlue: hsl(212, 23%, 69%);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lightGrayishBlue);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 40% auto;
+  width: clamp(600px, 95%, 800px);
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 100px 0px rgba(0, 0, 0, 0.103);
+}
+
+.main-img {
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.main-text-container {
+  padding: 1.5rem calc(30% - 6rem);
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: var(--veryDarkGrayishBlue);
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.main-paragraph {
+  font-size: 0.8rem;
+  color: var(--desaturatedDarkBlue);
+  margin-bottom: 1rem;
+}
+
+.person {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.person img {
+  border-radius: 50%;
+  max-width: 45px;
+  margin-right: 1rem;
+}
+
+.person h5 {
+  color: var(--veryDarkGrayishBlue);
+}
+
+.person p {
+  font-size: 0.8rem;
+  color: var(--desaturatedDarkBlue);
+}
+
+.share-icon {
+  position: absolute;
+  right: 0;
+  background-color: var(--lightGrayishBlue);
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--desaturatedDarkBlue);
+  cursor: pointer;
+}
+.share-icon.active {
+  color: white;
+  background-color: var(--desaturatedDarkBlue);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 200px;
+  background-color: var(--veryDarkGrayishBlue);
+  padding: 0.8rem;
+  cursor: default;
+  border-radius: 0.5rem;
+  top: -175%;
+  right: 50%;
+  transform: translateX(50%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.social-links span {
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  color: var(--desaturatedDarkBlue);
+}
+.social-links *:not(span) {
+  color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 650px) {
+  .social-links::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: var(--veryDarkGrayishBlue) transparent transparent transparent;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .social-links {
+    right: 250%;
+  }
+  .social-links::before {
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    grid-template-columns: 1fr;
+    width: clamp(250px, 95%, 375px);
+    position: relative;
+  }
+
+  .main-img {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .main-text-container {
+    padding: 1.5rem calc(20% - 2rem) 1rem;
+  }
+
+  .share-icon {
+    z-index: 1;
+  }
+
+  .social-links {
+    font-size: 1.5rem;
+    padding: 1.3rem clamp(1rem, 30%, 8rem) 1.3rem 0;
+    border-radius: 0 0 0.5rem 0.5rem;
+    transform: none;
+    width: 100%;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    box-shadow: none;
+  }
+  .social-links span {
+    font-size: 0.8rem;
+  }
+}

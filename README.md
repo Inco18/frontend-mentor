@@ -18,3 +18,4 @@ Landing page: https://inco18.github.io/frontend-mentor/
 | [Profile card component](https://inco18.github.io/frontend-mentor/profile-card)              | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/profile-card)       |
 | [FAQ accordion card](https://inco18.github.io/frontend-mentor/faq-accordion)                 | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/faq-accordion)      |
 | [Social proof section](https://inco18.github.io/frontend-mentor/social-proof)                | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/social-proof)       |
+| [Article preview component](https://inco18.github.io/frontend-mentor/article-preview)        | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/article-preview)    |
