@@ -19,3 +19,4 @@ Landing page: https://inco18.github.io/frontend-mentor/
 | [FAQ accordion card](https://inco18.github.io/frontend-mentor/faq-accordion)                 | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/faq-accordion)      |
 | [Social proof section](https://inco18.github.io/frontend-mentor/social-proof)                | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/social-proof)       |
 | [Article preview component](https://inco18.github.io/frontend-mentor/article-preview)        | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/article-preview)    |
+| [Four card feature section](https://inco18.github.io/frontend-mentor/four-card)              | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/four-card)          |
