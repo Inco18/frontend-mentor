@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="logo" />
+    </header>
+    <picture class="hero-img">
+      <source srcset="images/hero-mobile.jpg" media="(max-width: 700px)" />
+      <img src="images/hero-desktop.jpg" alt="woman photo" />
+    </picture>
+    <main>
+      <h1>
+        <span>WE'RE</span><br />
+        COMING SOON
+      </h1>
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </p>
+      <form id="email-form">
+        <input type="text" placeholder="Email Address" />
+        <button type="submit">
+          <img src="images/icon-error.svg" class="error-icon" />
+          <img src="images/icon-arrow.svg" alt="arrow icon" />
+        </button>
+        <p class="error-message">Please provide a valid email</p>
+      </form>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/Inco18" target="_blank"
+          >Patryk Pacholczyk</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
