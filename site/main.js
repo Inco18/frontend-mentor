@@ -24,7 +24,7 @@ const getChallenges = async function () {
           <div class="design-div">
             <img
               class="design"
-              src="${data[i].name}/design/real.png"
+              src="${data[i].name}/design/real.jpg"
               alt="website design"
             />
           </div>
