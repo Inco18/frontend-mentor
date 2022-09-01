@@ -102,5 +102,13 @@
     "lang": ["HTML", "CSS", "JS"],
     "finish_date": "29.08.2022",
     "fm-link": "https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0"
+  },
+  {
+    "name": "intro-component",
+    "title": "Intro component with sign-up form",
+    "difficulty": 1,
+    "lang": ["HTML", "CSS", "JS"],
+    "finish_date": "01.09.2022",
+    "fm-link": "https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1"
   }
 ]

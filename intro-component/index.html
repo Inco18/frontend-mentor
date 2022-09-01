@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="info">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="form-container">
+        <div class="form-info">
+          Try it free 7 days <span>then $20/mo. thereafter</span>
+        </div>
+        <form>
+          <label>
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              aria-label="Your first name" /><img
+              class="hidden"
+              src="images/icon-error.svg"
+              alt="error icon" />
+            <p class="hidden"></p
+          ></label>
+          <label>
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              aria-label="Your last name" /><img
+              class="hidden"
+              src="images/icon-error.svg"
+              alt="error icon" />
+            <p class="hidden"></p
+          ></label>
+          <label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+              aria-label="Your email address" /><img
+              class="hidden"
+              src="images/icon-error.svg"
+              alt="error icon" />
+            <p class="hidden"></p
+          ></label>
+          <label>
+            <input
+              type="password"
+              name="firstName"
+              placeholder="Password"
+              aria-label="Set your password" /><img
+              class="hidden"
+              src="images/icon-error.svg"
+              alt="error icon" />
+            <p class="hidden"></p
+          ></label>
+          <button type="submit">Claim your free trial</button>
+          <p>
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/Inco18" target="_blank"
+          >Patryk Pacholczyk</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
