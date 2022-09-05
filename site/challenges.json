@@ -110,5 +110,13 @@
     "lang": ["HTML", "CSS", "JS"],
     "finish_date": "01.09.2022",
     "fm-link": "https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1"
+  },
+  {
+    "name": "single-price",
+    "title": "Single price grid component",
+    "difficulty": 1,
+    "lang": ["HTML", "CSS"],
+    "finish_date": "05.09.2022",
+    "fm-link": "https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc"
   }
 ]

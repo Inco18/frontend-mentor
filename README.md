@@ -22,3 +22,4 @@ Landing page: https://inco18.github.io/frontend-mentor/
 | [Four card feature section](https://inco18.github.io/frontend-mentor/four-card)               | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/four-card)          |
 | [Base Apparel coming soon page](https://inco18.github.io/frontend-mentor/base-apparel)        | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/base-apparel)       |
 | [Intro component with sign-up form](https://inco18.github.io/frontend-mentor/intro-component) | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/intro-component)    |
+| [Single price grid component](https://inco18.github.io/frontend-mentor/single-price)          | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/single-price)       |
