@@ -126,5 +126,13 @@
     "lang": ["HTML", "CSS", "JS"],
     "finish_date": "08.09.2022",
     "fm-link": "https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da"
+  },
+  {
+    "name": "huddle-landing-page",
+    "title": "Huddle landing page with a single introductory section",
+    "difficulty": 1,
+    "lang": ["HTML", "CSS"],
+    "finish_date": "11.09.2022",
+    "fm-link": "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0"
   }
 ]

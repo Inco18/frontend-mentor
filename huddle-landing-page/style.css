@@ -1,0 +1,235 @@
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* STYLING */
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --softMagenta: hsl(300, 69%, 71%);
+}
+
+body {
+  background-color: var(--violet);
+  background-image: url(images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  width: min(90%, 100rem);
+  padding: 3rem 0 2rem;
+  margin: 0 auto;
+}
+
+header img {
+  max-height: 3.5rem;
+}
+
+main {
+  width: min(90%, 99rem);
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin: 0 auto;
+}
+
+main img {
+  width: 100%;
+  padding-right: 3rem;
+}
+
+.info {
+  color: white;
+  padding-top: 3rem;
+}
+
+.info h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.info p {
+  font-family: "Open sans", sans-serif;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.info button {
+  font-family: "Poppins", sans-serif;
+  border-radius: 100vw;
+  border: 0;
+  padding: 0.7rem 3rem;
+  color: var(--violet);
+  cursor: pointer;
+  transition: background-color 0.1s, color 0.1s;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.info button:hover {
+  background-color: var(--softMagenta);
+  color: white;
+}
+
+footer {
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  width: min(90%, 99rem);
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.socials a {
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.1s, color 0.1s;
+}
+
+.socials a:hover {
+  border-color: hsl(321, 99%, 66%);
+  color: hsl(321, 99%, 66%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  text-align: right;
+}
+.attribution a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  main {
+    grid-template-columns: 70% 30%;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .info h1 {
+    font-size: 1.5rem;
+  }
+
+  .info p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .info button {
+    padding: 0.7rem 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .info {
+    padding: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+    background-size: contain;
+    background-position: top;
+  }
+  header {
+    padding: 3rem 0 0;
+    max-width: 82%;
+  }
+  header img {
+    max-height: 2.5rem;
+  }
+  main {
+    grid-template-columns: 1fr;
+    max-width: 80%;
+  }
+  main img {
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+  .socials {
+    justify-content: center;
+  }
+  .attribution {
+    text-align: center;
+  }
+}
