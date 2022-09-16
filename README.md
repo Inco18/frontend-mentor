@@ -25,3 +25,4 @@ Landing page: https://inco18.github.io/frontend-mentor/
 | [Single price grid component](https://inco18.github.io/frontend-mentor/single-price)                                   | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/single-price)        |
 | [Ping single column coming soon page](https://inco18.github.io/frontend-mentor/ping-single-column)                     | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/ping-single-column)  |
 | [Huddle landing page with a single introductory section](https://inco18.github.io/frontend-mentor/huddle-landing-page) | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/huddle-landing-page) |
+| [Interactive card details form](https://inco18.github.io/frontend-mentor/interactive-card)                             | [GitHub](https://github.com/Inco18/frontend-mentor/tree/main/interactive-card)    |

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <aside>
+      <div class="cards">
+        <div class="card-front">
+          <img src="images/card-logo.svg" alt="" />
+          <div class="card-number">0000 0000 0000 0000</div>
+          <div class="card-name">Jane Appleseed</div>
+          <div class="card-exp">00/00</div>
+        </div>
+        <div class="card-back">
+          <div class="card-cvc">000</div>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <form>
+        <label
+          >CARDHOLDER NAME<br /><input
+            maxlength="40"
+            class="wide"
+            type="text"
+            placeholder="e.g. Jane Appleseed"
+            name="card-name" />
+          <p class="error error-hidden"></p></label
+        ><br />
+        <label
+          >CARD NUMBER<br /><input
+            class="wide"
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+            name="card-num" />
+          <p class="error error-hidden"></p></label
+        ><br />
+        <div class="inputs-date">
+          <label
+            >EXP. DATE (MM/YY)<br /><input
+              min="1"
+              max="12"
+              type="number"
+              placeholder="MM"
+              name="month"
+              aria-label="month" /><input
+              type="number"
+              placeholder="YY"
+              name="year"
+              min="1"
+              max="99"
+              aria-label="year" />
+            <p class="error error-hidden"></p
+          ></label>
+        </div>
+        <div class="input-cvc">
+          <label
+            >CVC<br /><input
+              type="number"
+              placeholder="e.g. 123"
+              name="cvc"
+              min="0"
+              max="999" />
+            <p class="error error-hidden"></p
+          ></label>
+        </div>
+        <button type="submit">Confirm</button>
+      </form>
+
+      <!-- COMPLETED STATE -->
+
+      <div class="thank-you hidden">
+        <img src="images/icon-complete.svg" alt="complete icon" />
+        <h2>THANK YOU!</h2>
+        <p>We've added your card details</p>
+        <button id="continue">Continue</button>
+      </div>
+
+      <!-- ATTRIBUTION -->
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/Inco18" target="_blank"
+          >Patryk Pacholczyk</a
+        >.
+      </div>
+    </main>
+  </body>
+</html>

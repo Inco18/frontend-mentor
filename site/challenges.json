@@ -134,5 +134,13 @@
     "lang": ["HTML", "CSS"],
     "finish_date": "11.09.2022",
     "fm-link": "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0"
+  },
+  {
+    "name": "interactive-card",
+    "title": "Interactive card details form",
+    "difficulty": 2,
+    "lang": ["HTML", "CSS", "JS"],
+    "finish_date": "16.09.2022",
+    "fm-link": "https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw"
   }
 ]
