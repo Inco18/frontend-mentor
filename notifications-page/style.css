@@ -1,0 +1,270 @@
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* STYLING */
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+  font-weight: 500 800;
+}
+
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+
+  --veryLightGrayishBlue: hsl(210, 60%, 98%);
+  --lightGrayishBlue1: hsl(211, 68%, 94%);
+  --lightGrayishBlue2: hsl(205, 33%, 90%);
+  --grayishBlue: hsl(219, 14%, 63%);
+  --darkGrayishBlue: hsl(219, 12%, 42%);
+  --veryDarkBlue: hsl(224, 21%, 14%);
+}
+
+* {
+  font-family: "Plus Jakarta Sans";
+}
+
+body {
+  background-color: var(--veryLightGrayishBlue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: white;
+  width: min(100%, 45rem);
+  border-radius: 1rem;
+  padding: 2rem 2rem 0 2rem;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.notifications_number-container {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.notifications_number {
+  background-color: var(--blue);
+  color: white;
+  margin-left: 0.7rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding: 0 0.7rem;
+}
+
+#mark-all {
+  color: var(--darkGrayishBlue);
+  transition: color 0.1s;
+}
+#mark-all:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+li img {
+  width: 45px;
+  height: 45px;
+  margin-right: 1rem;
+}
+
+li.unread {
+  background-color: var(--veryLightGrayishBlue);
+}
+
+li.unread span {
+  width: 8px;
+  height: 8px;
+  background-color: var(--red);
+  position: absolute;
+  border-radius: 50%;
+  bottom: 8px;
+  transform: translateX(8px);
+}
+
+li.unread .main-text,
+li:has(img.other-img) .main-text {
+  margin-right: 10px;
+}
+
+li.unread:has(img.other-img) .main-text {
+  margin-right: 15px;
+}
+
+.main-text {
+  position: relative;
+  color: var(--darkGrayishBlue);
+}
+
+.main-text a {
+  font-weight: 800;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+.main-text a:hover,
+.link-blue {
+  color: var(--blue);
+}
+
+.link-dark {
+  color: var(--veryDarkBlue);
+}
+
+.link-gray {
+  color: var(--darkGrayishBlue);
+}
+
+.ago {
+  color: var(--grayishBlue);
+}
+
+.other-text {
+  color: var(--darkGrayishBlue);
+  border: 1px solid var(--lightGrayishBlue2);
+  margin-top: 0.5rem;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  transition: background-color 0.1s;
+}
+
+.other-text:hover {
+  cursor: pointer;
+  background-color: var(--lightGrayishBlue1);
+}
+
+.other-img {
+  border-radius: 0.5rem;
+  margin-left: auto;
+}
+
+.other-img:hover {
+  cursor: pointer;
+  outline: 3px solid var(--lightGrayishBlue2);
+}
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+@media (max-width: 500px) {
+  :root {
+    font-size: 90%;
+  }
+
+  body {
+    justify-content: flex-start;
+  }
+
+  main {
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  li img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 325px) {
+  main {
+    padding: 2rem 0.5rem 0 0.5rem;
+  }
+}

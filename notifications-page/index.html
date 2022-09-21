@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="main-header">
+        <div class="notifications_number-container">
+          <h1>Notifications</h1>
+          <span class="notifications_number">3</span>
+        </div>
+        <p id="mark-all">Mark all as read</p>
+      </div>
+
+      <ul class="notifications">
+        <li class="unread">
+          <img src="assets/images/avatar-mark-webber.webp" alt="" />
+          <div class="notification_main_content">
+            <p class="main-text">
+              <a class="link-dark" href="#">Mark Webber</a> reacted to your
+              recent post
+              <a class="link-gray" href="#">My first tournament today!</a
+              ><span></span>
+            </p>
+            <p class="ago">1m ago</p>
+          </div>
+        </li>
+
+        <li class="unread">
+          <img src="assets/images/avatar-angela-gray.webp" alt="" />
+          <div class="notification_main_content">
+            <p class="main-text">
+              <a class="link-dark" href="#">Angela Gray</a> followed you<span
+              ></span>
+            </p>
+            <p class="ago">5m ago</p>
+          </div>
+        </li>
+
+        <li class="unread">
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="" />
+          <div class="notification_main_content">
+            <p class="main-text">
+              <a class="link-dark" href="#">Jacob Thompson</a> has joined your
+              group <a class="link-blue" href="#">Chess Club</a><span></span>
+            </p>
+            <p class="ago">1 day ago</p>
+          </div>
+        </li>
+
+        <li>
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="" />
+          <div class="notification_main_content">
+            <p class="main-text">
+              <a class="link-dark" href="#">Rizky Hasanuddin</a> sent you a
+              private message
+              <span></span>
+            </p>
+            <p class="ago">5 days ago</p>
+            <p class="other-text">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="" />
+          <div class="notification_main_content">
+            <p class="main-text">
+              <a class="link-dark" href="#">Kimberly Smith</a> commented on your
+              picture<span></span>
+            </p>
+            <p class="ago">1 week ago</p>
+          </div>
+          <img
+            class="other-img"
+            src="assets/images/image-chess.webp"
+            alt="Girl playing chess"
+          />
+        </li>
+
+        <li>
+          <img src="assets/images/avatar-nathan-peterson.webp" alt="" />
+          <div class="notification_main_content">
+            <p class="main-text">
+              <a class="link-dark" href="#">Nathan Peterson</a> reacted to your
+              recent post
+              <a class="link-gray" href="#"
+                >5 end-game strategies to increase your win rate</a
+              ><span></span>
+            </p>
+            <p class="ago">2 weeks ago</p>
+          </div>
+        </li>
+
+        <li>
+          <img src="assets/images/avatar-anna-kim.webp" alt="" />
+          <div class="notification_main_content">
+            <p class="main-text">
+              <a class="link-dark" href="#">Anna Kim</a> left the group
+              <a class="link-blue" href="#">Chess Club</a><span></span>
+            </p>
+            <p class="ago">2 weeks ago</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/Inco18" target="_blank"
+        >Patryk Pacholczyk</a
+      >.
+    </div>
+  </body>
+</html>
